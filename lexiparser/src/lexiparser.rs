@@ -15,7 +15,7 @@ impl Parse for MyParser {
     }
 
     fn get_gen(&self) -> String {
-        "gen 1".to_string()
+        "gen 2.0".to_string()
     }
 
     fn get_grammar(&self) -> String {

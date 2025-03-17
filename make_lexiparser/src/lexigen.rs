@@ -1,4 +1,4 @@
-use bootstrap::libgen::indent_source;
+use bootstrap_lib::libgen::indent_source;
 use lexiparser::lexiparser::build_parser;   // crate parser
 use lexiparser::lexiparser::Parse;          // we must use the crate's trait
 
@@ -19,7 +19,7 @@ pub fn build_parser_manual() -> (String, String, String) {
 pub fn write_source_code(name: String) -> String {
     let (lib, generator, grammar) = build_parser_manual();
     let mut src1 = Vec::<String>::new();
-    src1.push("use bootstrap::libcore::Parse;".to_string());
+    src1.push("pub use lexiparser_bootstrap::libcore::Parse;".to_string());
     let mut src2 = Vec::<String>::new();
     src2.push("pub struct MyParser {}".to_string());
     src2.push("".to_string());
@@ -40,15 +40,15 @@ pub fn write_source_code(name: String) -> String {
     src2.push(format!("        \"{grammar}\".to_string()"));
     src2.push("    }".to_string());
     src2.push("}".to_string());
-    indent_source(vec![src1, src2], 4)
+    indent_source(vec![src1, src2], 0)
 }
 
 #[cfg(test)]
 mod tests {
-    use bootstrap::libgen::{get_tagged_source, replace_tagged_source};
+    use bootstrap_lib::libgen::{get_tagged_source, replace_tagged_source};
     use super::*;
 
-    const FILENAME: &str = "lexiparser/src/lexiparser.rs";
+    const FILENAME: &str = "../lexiparser/src/lexiparser.rs";
     const TAG: &str = "lexiparser";
 
     fn build_sources() -> String {

@@ -8,19 +8,39 @@ version = "0.1.0"
 source = "git+https://github.com/blueglyph/bootstrap?tag=v1.0#2d0ea06c42bb29aba2d310c964175f503fe2c578"
 
 [[package]]
+name = "bootstrap"
+version = "0.1.0"
+source = "git+https://github.com/blueglyph/bootstrap?tag=v2.0#59733473a791f7e82a770296496c51657cc2c6ee"
+dependencies = [
+ "lexiparser 0.1.0 (git+https://github.com/blueglyph/bootstrap?tag=v2.0)",
+]
+
+[[package]]
 name = "bootstrap_lib"
 version = "0.1.0"
 dependencies = [
- "lexiparser",
+ "lexiparser 0.1.0",
 ]
 
 [[package]]
 name = "lexiparser"
 version = "0.1.0"
 dependencies = [
- "bootstrap",
+ "bootstrap 0.1.0 (git+https://github.com/blueglyph/bootstrap?tag=v1.0)",
+]
+
+[[package]]
+name = "lexiparser"
+version = "0.1.0"
+source = "git+https://github.com/blueglyph/bootstrap?tag=v2.0#59733473a791f7e82a770296496c51657cc2c6ee"
+dependencies = [
+ "bootstrap 0.1.0 (git+https://github.com/blueglyph/bootstrap?tag=v1.0)",
 ]
 
 [[package]]
 name = "make_lexiparser"
 version = "0.1.0"
+dependencies = [
+ "bootstrap 0.1.0 (git+https://github.com/blueglyph/bootstrap?tag=v2.0)",
+ "lexiparser 0.1.0 (git+https://github.com/blueglyph/bootstrap?tag=v2.0)",
+]
