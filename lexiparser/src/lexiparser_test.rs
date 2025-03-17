@@ -6,7 +6,7 @@ mod base_test {
     #[test]
     fn test_parser() {
         let parser = build_parser();
-        assert_eq!(parser.get_lib(), "lib 1");
+        assert_eq!(parser.get_lib(), "lib 3.0");
         assert_eq!(parser.get_gen(), "gen 2.0");
         assert_eq!(parser.get_grammar(), "grammar 1");
     }

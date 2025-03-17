@@ -11,7 +11,7 @@ pub fn build_parser() -> impl Parse {
 
 impl Parse for MyParser {
     fn get_lib(&self) -> String {
-        "lib 1".to_string()
+        "lib 3.0".to_string()
     }
 
     fn get_gen(&self) -> String {

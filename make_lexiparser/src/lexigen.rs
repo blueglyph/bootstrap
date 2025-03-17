@@ -1,3 +1,4 @@
+use bootstrap_lib::libcore::LIB_VERSION;
 use bootstrap_lib::libgen::indent_source;
 use lexiparser::lexiparser::build_parser;   // crate parser
 use lexiparser::lexiparser::Parse;          // we must use the crate's trait
@@ -9,7 +10,7 @@ const GEN_VERSION: &str = "gen 2.0";
 pub fn build_parser_manual() -> (String, String, String) {
     let parser = build_parser();
     (
-        parser.get_lib(),
+        LIB_VERSION.to_string(),
         GEN_VERSION.to_string(),
         parser.get_grammar()
     )
