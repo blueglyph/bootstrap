@@ -1,4 +1,4 @@
 [workspace]
-members = [ "bootstrap-lib", "lexiparser", "make_lexiparser"]
-default-members = ["bootstrap-lib", "lexiparser"]
+members = [ "bootstrap_lib", "lexiparser", "make_lexiparser"]
+default-members = ["bootstrap_lib", "lexiparser"]
 resolver = "3"
