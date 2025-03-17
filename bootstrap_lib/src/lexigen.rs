@@ -3,7 +3,7 @@ use crate::libgen::indent_source;
 use lexiparser::lexiparser::{build_parser, Parse};   // crate parser; we must use the crate's trait
 
 /// Generator version
-const GEN_VERSION: &str = "gen 1";
+const GEN_VERSION: &str = "gen 2.0";
 
 /// Creates the custom parser
 pub fn build_parser_manual() -> (String, String, String) {
