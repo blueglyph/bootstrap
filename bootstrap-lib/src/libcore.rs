@@ -2,7 +2,7 @@
 // Represents the library
 
 /// Library version
-pub const LIB_VERSION: &str = "lib 1";
+pub const LIB_VERSION: &str = "lib 2.0";
 
 pub trait Parse {
     fn get_lib(&self) -> String;

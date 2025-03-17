@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod base_test {
-    use bootstrap::libcore::Parse;
+    use lexiparser_bootstrap::libcore::Parse;
     use crate::lexiparser::build_parser;
 
     #[test]

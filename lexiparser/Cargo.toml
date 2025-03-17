@@ -4,4 +4,5 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-bootstrap = { git = "https://github.com/blueglyph/bootstrap", tag = "v1.0" }
+# renaming "bootstrap" to avoid name confusion when this code is used in the bootstrap library
+lexiparser_bootstrap = { git = "https://github.com/blueglyph/bootstrap", tag = "v2.0", package="bootstrap-lib" }

@@ -1,6 +1,6 @@
+use crate::libcore::LIB_VERSION;
 use crate::libgen::indent_source;
-use lexiparser::lexiparser::build_parser;   // crate parser
-use lexiparser::lexiparser::Parse;          // we must use the crate's trait
+use lexiparser::lexiparser::{build_parser, Parse};   // crate parser; we must use the crate's trait
 
 /// Generator version
 const GEN_VERSION: &str = "gen 1";
@@ -9,7 +9,7 @@ const GEN_VERSION: &str = "gen 1";
 pub fn build_parser_manual() -> (String, String, String) {
     let parser = build_parser();
     (
-        parser.get_lib(),
+        LIB_VERSION.to_string(),
         GEN_VERSION.to_string(),
         parser.get_grammar()
     )

@@ -1,11 +1,4 @@
-[package]
-name = "bootstrap"
-version = "0.1.0"
-edition = "2024"
-
-[dependencies]
-lexiparser = { path = "lexiparser" }
-
 [workspace]
-members = ["lexiparser"]
-default-members = [".", "lexiparser"]
+members = [ "bootstrap-lib", "lexiparser", "make_lexiparser"]
+default-members = ["bootstrap-lib", "lexiparser"]
+resolver = "3"

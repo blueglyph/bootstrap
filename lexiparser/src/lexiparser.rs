@@ -1,7 +1,7 @@
 // -------------------------------------------------------------------------
 // [lexiparser]
 
-pub use bootstrap::libcore::Parse;
+pub use lexiparser_bootstrap::libcore::Parse;
 
 pub struct MyParser {}
 
