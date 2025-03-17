@@ -1,0 +1,8 @@
+[package]
+name = "make_lexiparser"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+#bootstrap = { git = "https://github.com/blueglyph/bootstrap", tag = "v2.0" }
+#lexiparser = { git = "https://github.com/blueglyph/bootstrap", tag = "v2.0" }
