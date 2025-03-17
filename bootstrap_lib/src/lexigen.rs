@@ -19,7 +19,7 @@ pub fn build_parser_manual() -> (String, String, String) {
 pub fn write_source_code(name: String) -> String {
     let (lib, generator, grammar) = build_parser_manual();
     let mut src1 = Vec::<String>::new();
-    src1.push("use bootstrap::libcore::Parse;".to_string());
+    src1.push("use bootstrap_lib::libcore::Parse;".to_string());
     let mut src2 = Vec::<String>::new();
     src2.push("pub struct MyParser {}".to_string());
     src2.push("".to_string());

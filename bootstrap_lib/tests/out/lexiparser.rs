@@ -2,7 +2,7 @@ pub(crate) mod lexiparser {
     // -------------------------------------------------------------------------
     // [lexiparser]
 
-    use bootstrap::libcore::Parse;
+    use bootstrap_lib::libcore::Parse;
 
     pub struct MyParser {}
 
@@ -12,7 +12,7 @@ pub(crate) mod lexiparser {
 
     impl Parse for MyParser {
         fn get_lib(&self) -> String {
-            "lib 1".to_string()
+            "lib 2.0".to_string()
         }
 
         fn get_gen(&self) -> String {
