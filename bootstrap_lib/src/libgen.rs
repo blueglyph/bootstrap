@@ -1,6 +1,6 @@
 use std::fs::{File, OpenOptions};
 use std::io::{Write, BufRead, BufReader, BufWriter, Read, Seek};
-use crate::CollectJoin;
+use bootstrap::CollectJoin;
 
 /// Collects and indents the source given in `parts`.
 pub fn indent_source(parts: Vec<Vec<String>>, indent: usize) -> String {
